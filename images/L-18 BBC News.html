@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BBC News</title>
+
+	<style type="text/css">
+		
+		#topbar{
+			width: 1280px;
+			height: 40px;
+			margin: 0 auto;
+		}
+		.bbclogo{
+			height: 30px;
+			width: 100px;
+			margin: 10px;
+			float: left;
+		}
+		.signinlogo{
+			height: 20px;
+			width: 20px;
+			margin: 15px 10px 0px 10px;
+		}
+		.topbar-section{
+			border-left: 2px black solid;
+			height: 100%;
+			float: left;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+
+		}
+		#signintext{
+			font-weight: bold;
+			padding-right: 40px;
+			position: relative;
+			bottom: 5px;
+			font size: 90%;			
+		}
+		.main{
+			font-weight: bold;
+			margin: 10px;
+			font-size: 90%;
+			position: relative;
+			top: 15px;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		#dropdown{
+			height: 15px;
+			width: 15px;
+			margin: 15px 15px 15px 40px;
+		}
+		#more{
+			float: left;
+			font-weight: bold;
+			font-size: 90%;
+			margin: 10px;
+			position: relative;
+			top: 7px;
+			padding-left: 10px;
+		}
+		#search{
+			height: 20px;
+			width: 120px;
+			border: 0px;
+			background-color: lightgray;
+			float: left;
+			font-size: 12px;
+			margin-left: 10px;
+			margin-top: 8px ;
+			
+			font-weight: bold;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			opacity: 50%;
+
+		}
+		#searchicon{
+			height: 20px;
+			width: 23px;
+			margin: 15px 3px 5px 5px;
+		}
+
+
+		#redbar{
+			height: 100px;
+			width: 100%;
+			background-color: red;
+			margin: 0 auto;
+
+		}
+		#news{
+			height: 50px;
+			width: 1000px;
+			padding-left: 120px;
+			padding-top: 2px;
+			padding-bottom: 20px;
+			color: white;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			font-weight: normal;
+		}
+		#content{
+			height: 20px;
+			width: 1240px;
+			margin: 0 auto;
+			color: white;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			font-weight: normal;
+			font-size: 15px;
+		}
+		.mainred{
+			position: relative;
+			top: 15px;
+			padding-right: 5px;
+			padding-left: 5px;
+			color: white;
+			text-decoration: none;
+		}
+		.sec-section{
+			height: 15px;
+			float: left;
+			border-right: 1px #BB4545 solid;
+			padding-right: 10px;
+		}
+		.clear{
+			clear: both;
+		}
+
+		#pagecontainer{
+			width: 1240px;
+			height: 500px;
+			margin: 0 auto;
+		}
+		#mainarticle{
+			width: 770px;
+			height: 500px;
+			float: left;
+		}
+		#tech{
+			font-size: 20px;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			position: relative;
+			top: 10px;
+
+
+		}
+		h1{
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			color: black;
+			position: relative;
+			top: 10px;
+		}
+		h2{
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			color: black;
+		}
+		p{
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			font-size: 20px;
+		}
+		#info{
+			width: 300px;
+			float: left;
+		}
+		#clock{
+			height: 15px;
+			width: 15px;
+		}
+		a{
+			font-family: Helvetica, Arial, freesans, sans-serif ;
+			color: blue;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+			color: purple;
+		}
+		#article-hr{
+			width: 50px;
+			border-color: red;
+			background-color: red;    
+			color: red;
+			height: 1px;
+		}
+		#playbutton{
+			height: 25px;
+			width: 28px;
+		}
+		#article-container{
+			width: 100%;
+			height: 450px;
+			border-right: 1px darkgray solid;
+		}
+		.image-box{
+			width: 400px;
+			height: 400px;
+			float: left;
+			position: relative;
+			left: 50px;
+		}
+		.article-image{
+			width: 390px;
+			height: 350px;
+
+		}
+		#right-article{
+			width: 460px;
+			height: 500px;
+			margin-left: 10px;
+			float: left;
+		}
+		.right-frame{
+			height: 100%;
+			width: 100%;
+			float: left;
+			position: relative;
+			bottom: 0px;
+		}
+		.video{
+			width: 50%;
+			height: 150px;
+			float: left;
+			padding-bottom: 20px;
+		}
+		.video-font{
+			font-family:Helvetica, Arial, freesans, sans-serif ;
+			font-size: 18px;
+			color: black;
+			width: 40%;
+			height: 150px;
+			float: left;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			
+		}
+		
+
+
+	</style>
+
+</head>
+<body>
+
+	<div id="topbar" >
+		<!-- Place the BBC logo image before the sign-in logo -->
+		<img class="bbclogo" src="images/bbclogo.png">
+		<div class="topbar-section">
+			<img class="signinlogo" src="images/signinlogo.jpg">
+			<span id="signintext">Sign in</span>
+		</div>
+		<div class="topbar-section"><span class="main">Home</span></div>
+		<div class="topbar-section"><span class="main">News</span></div>
+		<div class="topbar-section"><span class="main">Sports</span></div>
+		<div class="topbar-section"><span class="main">Weather</span></div>
+		<div class="topbar-section"><span class="main">Shop</span></div>
+		<div class="topbar-section"><span class="main">Reel</span></div>
+		<div class="topbar-section"><span class="main">Travel</span></div>
+		<div class="topbar-section"><span class="main">Capital</span></div>
+		<div class="topbar-section"><span id="more">More</span>
+			<img id="dropdown" src="images/dropdown.png"></div>
+		<div class="topbar-section" ><input id="search" type="text" value="Search"><img id="searchicon" src="images/searchicon.png">
+		</div>
+
+	</div>
+	<div class="clear"></div>
+
+	<div id="redbar" >
+		
+		<div id="news" ><h1 style="color: white">NEWS</h1></div>
+
+		<div id="content">
+			<div > <a style="color:white;" href="https://www.google.com/" class="sec-section" > <span class="mainred"></span>Home</a></div>
+			<div class="sec-section"><span class="mainred"></span>Video</div>
+			<div class="sec-section"><span class="mainred"></span>World</div>
+			<div class="sec-section"><span class="mainred"></span>Asia</div>
+			<div class="sec-section"><span class="mainred"></span>UK</div>
+			<div class="sec-section"><span class="mainred"></span>Business</div>
+			<div class="sec-section"><span class="mainred"></span>Tech</div>
+			<div class="sec-section"><span class="mainred"></span>Science</div>
+			<div class="sec-section"><span class="mainred"></span>Stories</div>
+			<div class="sec-section"><span class="mainred"></span>Entertainment & Arts</div>
+			<div class="sec-section"><span class="mainred"></span>Health</div>
+			<div class="sec-section"><span class="mainred"></span>World News Tv</div>
+			<div class="sec-section"><span class="mainred"></span>In Pictures</div>
+			<div class="sec-section"><span class="mainred"></span>Really Check</div>
+			<div class="sec-section"><span class="mainred"></span>Newsboat</div>
+			<div class="sec-section"><span class="mainred"></span>More</div>
+
+		</div>
+
+	</div>
+
+	<!-- Page container further divided into two parts main article and side article  -->
+
+	<div id="pagecontainer">
+
+		<!-- Main Article -->
+		<div id="mainarticle">
+			<span id="tech">Technology</span>
+			<div id="article-container">
+				<h1>Facebook and Instagram suffer most severe outage ever</h1>
+
+				<div id="info">
+					<p>The social network confirms problems with its "family of apps", but the cause is currently unknown.</p>
+					<p ><img src="images/clock logo.png" id="clock"> 21 August 2023 | <a href="https://www.youtube.com/watch?v=wk15FqP1RH0" >Technology</a> </p>
+					<hr id="article-hr" align="left">
+					<p><img src="images/playbutton.png" id="playbutton"> <a href="https://www.youtube.com/watch?v=iZBAEzPun_g" style="color: #1D1D1B;">Facebook and Instagram suffer most severe outage ever</a></p>
+				
+				</div>
+				<div class="image-box"><img class="article-image" src="images/technology.jpg" ></div>
+			</div>
+			
+
+		</div>
+
+		<!-- Right article -->
+
+		<div id="right-article">
+			<p><h2>Watch/Listen</h2></p>
+			
+			<div id="right-frame">
+				<p><iframe class="video" width="95%" height="125px" src="https://www.youtube.com/embed/FIIoF3Qw1n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<a class="video-font" href="https://www.youtube.com/watch?v=FIIoF3Qw1n0">Russia’s Luna-25 spacecraft crashes on Moon - BBC News</a>
+			</p>
+
+			<p><iframe class="video" width="95%" height="125px" src="https://www.youtube.com/embed/XpZcveIiU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<a class="video-font" href="https://www.youtube.com/watch?v=XpZcveIiU_8">The electric roads that charge your car as you drive - BBC News
+</a></p>
+
+			<p><iframe class="video" width="95%" height="125" src="https://www.youtube.com/embed/kE4l6piCKRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<a class="video-font" href="https://www.youtube.com/watch?v=kE4l6piCKRQ">Storm Hilary: California and Mexico brace for tropical storm - BBC News
+</a></p>
+
+			<p><iframe class="video" width="95%" height="125px" src="https://www.youtube.com/embed/pK9wC2ghyLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<a class="video-font" href="https://www.youtube.com/watch?v=pK9wC2ghyLo">Baby serial killer nurse Lucy Letby given whole-life sentence - BBC News
+</a></p>
+
+			</div>
+
+			
+			
+		</div>
+		
+		
+	</div>
+
+</body>
+
+</html>
